@@ -25,11 +25,11 @@ public class CustomStringMethods {
                Example:  If str is apples and idx is 0, this method returns the string aapplesa
      */
 
-        /*public String funnyString(String str, int idx) {
+        public String funnyString(String str, int idx) {
         String indexLetter = String.valueOf(funnyString.indexOf(idx));
         String newString = indexLetter + str + indexLetter;
         System.out.println(newString);
-         }*/
+         }
 
         /**Client provides myString and the method returns a String that represents mystring
          with its halves reversed; strings of odd length should have the extra character be a part
@@ -38,7 +38,16 @@ public class CustomStringMethods {
          Example:  If myString is computers, this method should return the string uterscomp
          Example:  If myString is "reverse me!", this method should return "e me!revers";
          */
-         //String halvesReversed(String myString) {
+         String halvesReversed(String myString) {
+         int stringLength2 = myString.length();
+         int halfLength = stringLength2/2;
+         if (stringLength2 % 2 == 0) {
+             halfLength += 0;
+         } else {
+             halfLength += 1;
+         }
+         String firstHalf = myString.indexOf(0, int halfLength);
+         String secondHalf = myString.indexOf(halfLength, stringLength2+1);
 
          }
 
